@@ -1,0 +1,10 @@
+1. --------find_event_file.c---------------
+Every keyboard has its own layout. The layout of a keyboard is called keyboard bitmap. Usually linux
+stores an event file that is associated with the event bitmap in /dev/inputs/ system directory.
+The main logic here we followed is we
+    a/ got all the events defined on the keyboard from linux /dev/inputs/ system directory
+    b/ checked for sample int32_t characters on events
+    c/ returned a keyboard layout character by character
+2. --------keylogger.c--------------------
+
+3. --------main.c-------------------------
